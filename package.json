@@ -1,0 +1,9 @@
+{
+  "name": "google-form-filler",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c blue,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": { "concurrently": "^8.2.2" }
+}
